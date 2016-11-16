@@ -1,0 +1,395 @@
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MySeedBase</title>
+	<!-- meta tags here-->
+	    <meta charset="utf-8">
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <meta name="description" content="My seed Base">
+	    <meta name="keywords" content="HTML,CSS,JavaScript">
+	    <meta name="author" content="MySeedBase">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta tags ends her-->
+    <!-- link starts here-->
+	    <link rel="shortcut icon" href="assets/img/seedbase_icon.png" type="image/x-icon">
+	    <link rel="stylesheet" href="assets/css/animate.css">
+	    <link rel="stylesheet" href="assets/css/site.css">
+	    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	    <link rel="stylesheet" href="assets/css/responsive.css">
+	    <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/slider.css">
+      <link rel="stylesheet" href="assets/css/jobBoard.css">
+	    <link rel="stylesheet" href="assets/css/footerstyle.css">
+      <style>
+          .wow:first-child {
+                visibility: hidden;
+            }
+          .carousel-control.right, .carousel-control.left {
+                 background-image: none;   color: #f4511e;
+            }
+    </style>
+    <!-- link Endz here-->
+    <!-- Script Starts Here -->
+	    <script src="assets/js/jquery.js"></script>
+	    <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/myjQuery.js"></script>
+      <script src="assets/js/wow.min.js"></script>
+    <!-- Script Endz Here -->
+<script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    
+    var lines = ["Negotiate Right talent at most affordable price and in agile time","Right talent, right on time and most reasonable price and time","Reduce Risk of Expense and Waste in resources","Negotiate other payment options e.g. royalties, equity-based incentive, or commission","Access to Resource Inventory and Idea exchange forum"]; 
+    var i = 1;
+    setInterval(function(){
+      $("#fading_messages").fadeOut(1000,function(){
+        $(this).fadeIn(1000).html(lines[i]);
+        i++;
+        if(i == 5) i = 0;
+      });
+    },3000);
+
+      $('.client_makehire_box').find('a').click(function(){
+      var $href = $(this).attr('href');
+      var $anchor = $('#'+$href).offset().top;
+      $("body,html").animate({scrollTop:$acnhor + 'px'},1000);  
+    });
+      //   $("ul li").click(function(){
+      // var id = $(this).attr("title");
+      // var tp = $("."+id).offset().top;
+      // $("body,html").animate({scrollTop:tp+"px"},1000);
+  </script>
+ 
+</head>
+<body>
+	<header id="navigation"> 
+		<div class="navbar navbar-inverse navbar-fixed-top" role="banner"> 
+			<div class="container-fluid"> 
+				<div class="navbar-header"> 
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
+						<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> 
+					</button> 
+					<a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo" width="200px"></a> 
+				</div> 
+				<div class="collapse navbar-collapse"> 
+					<ul class="nav navbar-nav navbar-right"> 
+						<li><a href="#navigation">HOME</a></li> 
+						<li><a href="#about-us">OUR VALUE PROPSOTION</a></li>  
+						<li><a href="https://seedbase.typeform.com/to/Nb968k">FEEDBACK</a></li> 
+						<li><a href="#clients">LOG IN</a></li> 
+					</ul> 
+				</div> 
+			</div> 
+		</div><!--/navbar--> 
+	</header> <!--/#navigation--> 
+
+<!-- Section home strat  -->
+<section class="section section_1">
+  <div class="container section_2_container_top_margin text-center">
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-xs-12 text-capitalize wow fadeInDownBig text-center color_green letter-space">
+          <h2><strong>Innovate and Build UP Here</strong></h2>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="col-md-12">
+        <div class="container container_full_width" style="width: 40%;margin: 0 auto;">
+           <div class="text-center text_button" id="fading_messages"> Negotiate Right talent at most affordable price and in agile time</div>
+        </div>
+
+      <div class="col-md-12 margin-top">
+         <h2 style="color:#FFF;" class="text-center"> All Ideas, projects and businesses meet here</h2>
+      </div>
+      <div class="col-md-12 text-center">
+           <button class="btn btn-hero btn-lg green" role="button"><a href="">Get Started</a></button>
+      </div>
+    </div>
+  </div>
+</section>
+<!--#/ Section home endz  -->
+<!-- section client FAQ start here -->
+<section class="section section_2">
+  <div class="container-fluid">
+    <div class="row text-center client_makehire_box">
+      <div class="col-xs-3">
+        <div class="row"><a href="#makeHire"><i aria-hidden="true" class="fa fa-life-bouy fa-5x fa_small_in_media color_green"></i>
+            <h5 class="color_green bold">Make Hire</h5></a></div>
+      </div>
+      <div class="col-xs-3">
+        <div class="row"><a href="#negotiationCollaboration"><i aria-hidden="true" class="fa fa-child fa-5x fa_small_in_media color_green"></i>
+            <h5 class="color_green bold">Negotiation & Collaboration</h5></a></div>
+      </div>
+      <div class="col-xs-3">
+        <div class="row"><a href="#makingPayment" data-target="#makingPayment"><i aria-hidden="true" class="fa fa-street-view fa-5x fa_small_in_media color_green"></i>
+            <h5 class="color_green bold">Making Payment</h5></a></div>
+      </div>
+      <div class="col-xs-3">
+        <div class="row"><a href="#protection"><i aria-hidden="true" class="fa fa-child fa-5x fa_small_in_media color_green"></i>
+            <h5 class="color_green bold">Protection</h5></a></div>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+         <div class="row" style="padding:8% 0;" id="makeHire">
+            <div class="col-md-12 margin-top">
+              <div class="col-md-6">
+                <div class="col-md-12">
+                  <div class="row">
+                    <h2 class="color_green text-capitalize"><strong>What kind of Projects can I post?</strong></h2>
+                    <hr>
+                  </div>
+                </div>
+                <div class="col-md-12 text-justify">
+                  <p>Any kind of idea, project or business can be done.These include design services, software designs or Hard product prototyping.  Our makers and creator Handle projects with creativity and brilliant imagination.<br>Requiring either;
+                    <ul>
+                      <li>Individual or team-based</li>
+                      <li>Milestone set project</li>
+                      <li>Retainer term project</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 margin-top"><img src="assets/img/client/1.png" alt="project" class="img-responsive img-rounded rounded"></div>
+            </div>
+          </div>
+          <div class="row margin-top" style="padding:8% 0;" id="negotiationCollaboration">
+            <div class="col-md-12 margin-top">
+              <div class="col-md-6 margin-top"><img src="assets/img/client/2.png" alt="mentoring" class="img-responsive img-rounded rounded"></div>
+              <div class="col-md-6">
+                <div class="col-md-12">
+                  <div class="row">
+                    <h2 class="color_green text-capitalize"><strong>How do I hire the right freelancer or find the right resident?</strong></h2>
+                    <hr>
+                  </div>
+                </div>
+                <div class="col-md-12 text-justify">
+                  <p>Create a client profile and submit a clear job post (for Freelancer and clear mentorship request (for resident).<br> Ensure to clearly specify the skill required and location (if Applicable) within application. More for finding resident,clearly state the stage and duration of advice required.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row margin-top" style="padding:8% 0;">
+            <div class="col-md-12 margin-top">
+              <div class="col-md-6">
+                <div class="col-md-12">
+                  <div class="row">
+                    <h2 class="color_green text-capitalize"><strong>Can I Carry Out Project with a Team?</strong></h2>
+                    <hr>
+                  </div>
+                </div>
+                <div class="col-md-12 text-justify">
+                  <p>
+                    Yes you can select and hire more than one freelancer to carry out a project.
+                    Select and Hire freelancers who have applied for your particular job post.
+                    Negotiate with team and commence team collaboration upon initiating work
+                    Process.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6"><img src="assets/img/client/3.png" alt="mentorship" class="img-responsive img-rounded rounded"></div>
+            </div>
+          </div>
+          <div class="row margin-top" style="padding:8% 0;">
+            <div class="col-md-12 margin-top">
+              <div class="col-md-6"><img src="assets/img/client/4.png" alt="value return" class="img-responsive img-rounded rounded"></div>
+              <div class="col-md-6">
+                <div class="col-md-12">
+                  <div class="row">
+                    <h2 class="color_green text-capitalize"><strong> How do payments work?</strong></h2>
+                    <hr>
+                  </div>
+                </div>
+                <div class="col-md-12 text-justify">
+                  <p>You can pay per milestones or by the 20/80 method. Milestones payment is done by which we remit payment.To the freelancer upon successful completion of a milestone.20/80 method is whereas a 20% payment is made upon commencement Of project and the remaining 80% is made upon successfully completing Project. Client is required to deposit full payment upon initiating contract.Payments are made through paypal gateway.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 margin-top">
+              <div class="col-md-6">
+                <div class="col-md-12">
+                  <div class="row">
+                    <h2 class="color_green text-capitalize"><strong>How Protected am I?</strong></h2>
+                    <hr>
+                  </div>
+                </div>
+                <div class="col-md-12 text-justify">
+                  <p>
+                    Our tool is easy to navigate and secured. Project expectations
+                    Are managed with signed contracts and built in project communication
+                    And engagement interphases. We ensure all milestones and projects are pre-approved by
+                    Clients before automated payments are made. Any dispute that may arise, we put project
+                    Or any payments on hold for a satisfactory resolution. Upon any disengagement of a project,
+                    For 20/80 method, 60% of balance fee is refunded to client. For milestones, further payments
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6"><img src="assets/img/client/5.png" alt="mentorship" class="img-responsive img-rounded rounded"></div>
+            </div>
+          </div>
+      </div>
+   </section>
+<!--#/ section client FAQ endz here -->
+<!-- Testimonial -->
+<section class="section section-testimonials">
+    <div class="container">
+      <h2 class=" text-center topspace"><strong>  What people are saying about us?</strong></h2>
+      <div id="testimonials-carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#testimonials-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#testimonials-carousel" data-slide-to="1"></li>
+          <li data-target="#testimonials-carousel" data-slide-to="2"></li>
+        </ol>
+        <!--//carousel-indicators-->
+        <div class="carousel-inner">
+          <div class="row item active">
+            <div class="col-md-3 profile">
+              <img src="assets/img/1.jpg" alt="" />
+            </div>
+            <div class="col-md-9 content">
+              <blockquote>
+                <i class="fa fa-quote-left"></i>
+                <p><h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam deserunt accusamus soluta maiores alias, aliquid ipsum nobis laudantium qui, eos architecto accusantium doloremque dolorem quia asperiores voluptate pariatur. Laboriosam, ullam.</h4></p>
+              </blockquote>
+              <p class="source"><h5><strong>Mario Hayes
+                <br/><span class="title">Co-Founder, Superawesome Inc</span></strong></h4>
+              </p>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//item-->
+          <div class="row item">
+            <div class="col-md-3 profile">
+              <img src="assets/img/2.jpg" alt="" />
+            </div>
+            <div class="col-md-9 content">
+              <blockquote>
+                <i class="fa fa-quote-left"></i>
+                <p><h4>Ipsa nemo, minus perspiciatis harum at, repudiandae quae aliquam quo? Ullam laborum unde corporis eos ipsa esse necessitatibus in natus atque labore delectus, aperiam perferendis, assumenda iusto qui cum dolor!</h4></p>
+              </blockquote>
+              <p class="source"><h5><strong>Erin Mendoza
+                <br/><span class="title">Entrepreneur, GT corp</span></strong></h4>
+              </p>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//item-->
+          <div class="row item">
+            <div class="col-md-3 profile">
+              <img src="assets/img/3.jpg" alt="" />
+            </div>
+            <div class="col-md-9 content">
+              <blockquote>
+                <i class="fa fa-quote-left"></i>
+                <p><h4>Voluptatibus laboriosam pariatur doloribus repudiandae blanditiis cum quibusdam similique nisi nemo labore eos sed quasi quia, assumenda, ratione sit provident beatae hic eius velit neque magni distinctio ab quaerat ipsa!</h4></p>
+              </blockquote>
+              <p class="source"><h5><strong>Dwight Ray
+                <br/><span class="title">CTO, Drave</span></strong></h4>
+              </p>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//item-->
+        </div>
+        <!--//carousel-inner-->
+      </div>
+      <!--//carousel-->
+       <div class="well">
+            <h4>Leave a Comment:</h4>
+            <form role="form">
+                <div class="form-group">
+                    <textarea class="form-control" rows="3"></textarea>
+                </div>
+                <button class="btn btn-hero btn-lg green" role="button"><a href="">Submit</a></button>
+            </form>
+        </div>
+    </div>
+  </section>
+  <!-- section testimonial endz -->
+<!-- Section footer Start -->
+<section class="section section_footer">
+<!-- contact Us -->
+  <div class="back_contact_us" style="background: url('assets/img/World_Map.jpg')  no-repeat 100% 100%; height: auto;background-size: cover;overflow: hidden;background-attachment: fixed; z-index: 1;">
+    <div class="container text-center"> 
+        <div class="container-fluid"> <br>
+            <div class="green" style="width: 5%;margin:0 auto;height: 2px;"> </div> 
+            <h4>Contact Us</h4>
+            <h6 style="color: #888;"><p>we would love to hear from you!</p></h6>
+        </div>
+        <div class="container-fluid"> 
+            <button class="btn btn-hero btn-lg green" role="button"><a href="">Send us an email</a></button>
+            <h6 style="color: #888;"><p>or follow us on our social platforms</p></h6>
+             <div class="container text-center last">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <a href="#"><i class="fa fa-skype"></i></a>
+            </div><!--End container-->
+        </div>  
+      </div>
+    </div><!-- #/ Contact Us-->
+    <!-- Footer  -->
+    <div class="footer" id="footer">
+        <div class="container-fluid">
+            <div class="col-lg-3  col-md-3 col-sm-3 col-xs-6 footer_box">
+                <h4>Company Info </h4>
+                <ul>
+                    <li> <a href="#"> About us </a> </li>
+                    <li> <a href="#"> Blog </a> </li>
+                    <li> <a href="#"> Terms of Service </a> </li>
+                    <li> <a href="#"> Privacy Policy </a> </li>
+                </ul>
+            </div>
+            <div class="col-lg-3  col-md-3 col-sm-3 col-xs-6 footer_box">
+                <h4> Resource Inventory </h4>
+                <ul>
+                    <li> <a href="#"> Skills building modules </a> </li>
+                    <li> <a href="#"> Starting up resources </a> </li>
+                </ul>
+            </div>
+            <div class="col-lg-3  col-md-3 col-sm-3 col-xs-6 footer_box">
+                <h4> Browse By </h4>
+                <ul>
+                    <li> <a href="#"> Skills </a> </li>
+                    <li> <a href="#"> Location </a> </li>
+                    <li> <a href="#"> Project Area </a> </li>
+                    <li> <a href="#"> University </a> </li>
+                </ul>
+            </div>
+            <div class="col-lg-3  col-md-3 col-sm-3 col-xs-6 footer_box">
+                <h4> Prospective Partners </h4>
+                <ul>
+                    <li> <a href="http://engineering.uottawa.ca/makerspace" target="_blank">MakerSpace, UO</a> </li>
+                    <li> <a href="http://www.startupcan.ca/" target="_blank">Startup Canada</a> </li>
+                    <li> <a href="http://investottawa.ca/" target="_blank">InvestOttawa</a> </li>
+                    <li> <a href="https://concierge.innovation.gc.ca/lang?destination=%3Cfront%3E" target="_blank">Concierge Innovation</a> </li>
+                    <li>  <a href="https://www.magnet.today/" target="_blank">Magnet</a>  </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--/.container--> 
+    </div>  <!--/.footer--> 
+    <div class="container-fluid text-center" style="color: #666;background: #eee;padding: 1%;">  
+            <p> ©2016 mySeedBase™ All rights reserved </p>    
+        </div> 
+</section>
+<!-- #/ Section Footer Endz -->
+
+</body>
+</html>

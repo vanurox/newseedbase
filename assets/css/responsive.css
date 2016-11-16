@@ -1,0 +1,85 @@
+/*....................................
+			media query all home page setting 
+						................................*/
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+.navbar-brand {	position: relative;	top:-5px;	left: 20px;	}
+
+}
+
+
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+.navbar-brand {	position: relative;	top:-5px;left: 20px;	}
+
+}
+
+
+
+/* Portrait tablets and small desktops */
+@media (min-width: 770px) and (max-width: 991px) {
+
+.navbar-brand {	position: relative;	top:-5px;	}
+.our_ecosystem_box{min-height: 20vh !important}
+.section_2_container_top_margin{margin-top: 15%;}
+.form_box{width: 65% !important;}
+.form-group a button{width: 100%;}
+
+}
+
+
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 480px) and (max-width: 769px) {
+
+.nav >li >a {  padding-top: 20px !important;  padding-bottom: 20px !important;	}
+h2{font-size: 21px;}
+.full_width_container{	width: 95%;	margin:0 auto;}
+.section-testimonials > h4{font-size: 10px !important}
+.section-testimonials > h5{font-size: 10px !important}
+.client_makehire_box{width: 100%;}
+.container_full_width{width:70% !important;}
+.section_2_container_top_margin{margin-top: 15% !important;}
+.form-group a button{width: 100%;}
+.form_box{width: 70% !important;}
+}
+
+
+/* Portrait phones and smaller */
+@media (min-width: 320px) and (max-width: 479px) {
+
+.nav >li >a {  padding-top: 20px !important;	  padding-bottom: 20px !important;	}
+.footer-bottom .icon_fa{width: 90%;	}
+h1{font-size: 24px;}h2{font-size: 18px;}h3{font-size: 20px;}h4{font-size: 14px;}h5{font-size: 9px !important;}
+.fa_small_in_media{	font-size: 24px;}
+.section_2{padding: 20px 0 !important;}
+.section-testimonials{padding: 20px 0 !important}
+.section-testimonials > h4{font-size: 10px !important}
+.section-testimonials > h5{font-size: 10px !important}
+.btn.btn-lg{font-size: 12px !important} 
+.client_makehire_box{width: 100%;}
+.container_full_width{width: 100% !important; margin: auto;}
+.section_2_container_top_margin{margin-top:32% !important;}
+.form_box{width: 80% !important;}
+.form-group a button{width: 100%;}
+
+}
+@media(min-width: 240px) and (max-width: 319px) {
+
+.nav >li >a {	 padding-top: 20px !important; padding-bottom: 20px !important;	}
+.navbar-brand > img{	width: 178px;	}.footer-bottom .icon_fa{width: 90%;	}
+h1{font-size: 24px;}h2{font-size: 18px;}h3{font-size: 16px;}h4{font-size: 12px!important; }h5{font-size: 9px !important;}
+.fa_small_in_media{	font-size: 24px;}
+.section_2{padding: 20px 0 !important;}
+.section-testimonials{padding: 20px 0 !important}
+.section-testimonials > h4{font-size: 10px !important}
+.section-testimonials > h5{font-size: 10px !important}
+.btn.btn-lg{font-size: 12px !important}  
+.client_makehire_box{width: 100% ;}
+.container_full_width{	width: 100% !important;}
+.section_2_container_top_margin{margin-top: 32% !important;}
+.form_box{width: 85% !important;}
+.form-group a button{width: 100%;}
+}

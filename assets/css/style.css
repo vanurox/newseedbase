@@ -1,0 +1,235 @@
+*{
+	word-wrap:break-word;
+       font-family: "Helvetica Neue", Helvetica;
+}
+body
+{
+	background: #ededed; 
+}
+.wow:first-child {
+  visibility: hidden;
+}
+.page-wrapper
+{
+	width: 100%;overflow:hidden !important;
+
+}
+a:link{cursor:pointer;text-decoration: none !important;}
+.section{position:relative !important;	height: auto; width: 100%; clear:both; margin:0 !important;}
+.section_1{overflow: hidden;height: 100vh; background:url('../img/banner1.jpg') no-repeat 100% 100%;background-size: cover; background-attachment: fixed;z-index: 1;}
+.section_2{width: 100% ;margin:1% 0 0 0 !important;padding: 60px 0;	background: #fff; background-size:100% 100%; background-attachment: fixed; z-index: 1; }
+.section_3{width: 100% ;margin:1% auto !important;	background: #fff;padding: 0 ;height: auto; background-size:100% 100%; background-attachment: fixed; z-index: 2;}
+.section_4{width: 100% ;margin:1% auto !important;	background: #fff; height:auto; padding:8% 0;background-size:100% 100%; background-attachment: fixed; z-index: 3;}
+.section_5{width: 100% ;margin:8% 1% 1% 1% !important;	background: #fff; background-size:100% 100%; background-attachment: fixed; z-index: 4;}
+.section_6{	background: #ccc; height:auto; background-size:100% 100%; background-attachment: fixed; z-index: 4;}
+.job-board{width: 100% ;margin:1% auto !important;background: #fff; height:auto; background-size:100% 100%; background-attachment: fixed; z-index: 4;}
+.section-testimonials{width: 100% ;margin:1% auto !important;background: #fff;padding: 50px 0 ; }
+.still_have_qustion{width: 100% ;margin:1% auto !important;	background: #fff;}
+.home{width: 100% ;	background-size:100% 100%; background-attachment: fixed; z-index: 4;}
+.about{width: 100% ;margin:1% auto !important;background: #fff;padding: 50px 0 ;}
+.job_board{width: 100% ;margin:1% auto !important;background: #fff;padding: 20px 0 ;}
+.section_footer{width: 100% ;	background: #fff; background-size:100% 100%; background-attachment: fixed; z-index: 4;}
+/*/...............	all font background color 			...............*/
+.bold{font-weight: bold;}
+.padding{padding:10px 4px !important;}
+.green{background: #47B400 !important;color:#fff !important;}
+.purple{background:#8848CA !important;color:#fff !important;}
+.orange{background:#E48700 !important;color:#fff !important;}
+.black{background: #000;color: #fff}
+.color_white{color:#fff;}
+.color_purple{color:#8848CA  }
+.color_green{color: #47B400;}
+.color_orange{color: #E48700}
+.font_arial{    font-family: arial;}
+.margin_top{margin-top: 7%;}
+
+/********************************/
+/*          Custom Buttons      */
+/********************************/
+.btn.btn-lg {padding: 8px 15px;color: #fff;   border: 1px solid #ccc;
+    border-radius: 4px;font-size: 1.1em;font-weight: bold;}
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+    color: #fff;
+    margin: 2px auto;
+}
+.btn.btn-lg > a{
+  color: white;
+}
+
+/*************nav bar css  *******/
+
+.navbar-brand {  height: 80px;}
+
+.nav >li >a {  padding-top: 30px;  padding-bottom: 30px;  color: #fff !important;}
+.nav >li:hover
+{	background: rgba(16, 16, 16,.9);}
+.navbar-toggle {
+  padding: 10px;  margin: 25px 15px 25px 0;
+}
+.navbar-inverse{
+	border :none;	border-radius: 0; background-color: rgba(16, 16, 16,.8);
+}
+
+/*/section featured freelencer*/
+/*section 4 endz*/
+
+/*/section featured freelencer*/
+ .featured_freelancer  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+    .featured_freelancer  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+
+}
+.featured_freelancer{
+    background: #fff;
+    overflow: hidden;
+}
+
+.carousel-indicators li {
+    border-color: #f4511e;
+}
+.carousel-indicators li.active {
+    background-color: #f4511e;
+}
+/* Section: Testimonials
+******************************/
+.section-testimonials .carousel-indicators {
+  bottom: -60px;  z-index: auto;
+}
+.section-testimonials .carousel-indicators li {
+  border: none;  margin: 1px;  background: #ced3d9;
+}
+.section-testimonials .carousel-indicators li.active {
+  background: #454545;  border: none;  width: 10px;  height: 10px;  margin: 1px;
+}
+.section-testimonials .title {
+  margin-bottom: 60px;
+}
+.section-testimonials .item .profile img {
+  border-radius: 50%;  border: 9px solid rgba(0, 0, 0, 0.1);
+}
+.section-testimonials .item blockquote {
+  font-size: 15px;  font-weight: 300;  border-left: 0;  padding: 0;  position: relative;
+}
+.section-testimonials .item blockquote .fa {
+  position: absolute;  color: #ced3d9;  font-size: 22px;  left: -45px;
+}
+.section-testimonials .item .source {
+  font-weight: bold;
+}
+.section-testimonials .item .source .title {
+  font-size: 16px;  color: #333333;
+}
+.section-testimonials .well
+{	margin-top: 12%;}
+@media (max-width: 480px) {
+  .section-testimonials .item div {
+    text-align: justify;
+  }
+  .section-testimonials .well{	
+  	margin-top: 30%;}
+}
+
+
+/* ==========================
+							Our Ecosystem & partener Logo Slider  
+                    ================*/
+    .our_ecosystem_box {
+        background: #eee; min-height: 16vh;padding-top: 1%;
+    }
+    #jssor_1{
+      position: relative; 
+      margin: 0 auto; 
+      top: 0px; left: 0px; width: 980px; 
+      height: 100px; overflow: hidden; visibility: hidden;
+    }
+    #jssor_1  .slides{
+      cursor: default; position: relative; top: 0px; left: 50px; 
+      width: 820px; height: 100px; overflow: hidden;
+    }
+
+
+
+
+
+/*       ======================================  client Landing page =========================      */
+
+.client_makehire_box
+{
+    width:85%;
+    margin:0 auto !important;
+}
+.client_makehire_box > .col-xs-3{
+    font-size: 15px;
+}
+/*.button
+{
+    padding: 20px 15px !important;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}*/
+.text_button{padding: 20px 15px;border: 1px solid #ccc;border-radius: 5px;color: #fff;}
+.section_2_container_top_margin
+{
+    margin-top: 10%;
+}
+
+
+/*       ======================================  Post Business Landing Page =========================      */
+.image_box {
+min-height: 300px;
+}
+
+
+/*       ======================================  Forms Elements =========================      */
+      .form_box {
+          background: #fff;
+          padding: 0 5% 3% 5%;
+          /*margin:10vh;*/
+          width: 50%;
+          margin: 5vh auto;
+          font-size: 14px;
+          border-top: 2px solid #ddd;
+          border-radius: 5px;
+          box-shadow: 0px 0px 1px #000;
+          text-align: center;
+          color: #888
+      }
+      .form_box .m-t button{padding: 4px 20px;} 
+      .form-control {
+          height: 33px !important;
+          font-size: 11px;
+          border: 1px solid #aaa !important;
+      }
+      .top_bar {
+          background: #fff;
+          padding: 1% 0;
+      }
+      .form-group {
+          padding: 0 0 !important;
+          margin-bottom: 2px !important;
+      }
+      .form-group a button{color: #888}
+      .form-group a button.sign_as_client:hover {
+          background: #47B400;
+          color: #fff
+      }
+      .form-group a button.sign_as_freelancer:hover {
+          background: #E48700;
+          color: #fff
+      }
+      .form-group a button.sign_as_resident:hover {
+          background: #8848CA;
+          color: #fff
+      }
+      .a_link:hover{color:  #47B400;text-decoration: underline !important;}
+
+
