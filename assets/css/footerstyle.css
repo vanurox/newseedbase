@@ -1,18 +1,39 @@
+
 .navbar-hover:hover{
     cursor:pointer;
-    background:#000 !important;
     color:#fff;
+    border-top: 3px solid #00aedb; 
 }
 nav ul li a:hover{
-  border-top: 3px solid #00aedb;
-  border-size:border-box;
+  border-top: 3px solid #00aedb; 
+
+}
+
+.nav .open>a
+{
+    background:none !important;
+  border-top: 3px solid #00aedb !important; 
+}
+.nav>li>a:focus
+{
+    background:none !important;
+
+}
+
+li.active{
+    border-top:3px solid #00aedb;
+}
+.nav .open>a:visited
+{
+    background:none !important;
+  border-top: 3px solid #00aedb !important; 
+
 }
 .right-side{
     position: relative;
     right:0; !important;
 }
-li.active{border-top: 3px solid #00aedb; border-size:border-box;}
-section.active {}
+
 .footer {
     background: #EDEFF1;
     height: auto;

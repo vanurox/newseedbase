@@ -1,6 +1,7 @@
 *{
 	word-wrap:break-word;
-       font-family: "Helvetica Neue", Helvetica;
+  font-family: "Helvetica Neue", Helvetica;
+  border-size:border-box;
 }
 
 body
@@ -64,9 +65,16 @@ a:link{cursor:pointer;text-decoration: none !important;}
 
 .navbar-brand {  height: 80px;}
 
-.nav >li >a {  padding-top: 30px;  padding-bottom: 30px; overflow-y:visible !important; color: #fff !important;}
-.nav >li:hover
-{	background: rgba(16, 16, 16,.9);}
+.nav >li >a {  
+  padding-top: 30px;
+    padding-bottom: 30px; 
+    overflow-y:visible !important;
+     color: #fff !important;
+    background: none !important;   }
+.nav >li > a:hover
+{
+	background: none !important;
+}
 .navbar-toggle {
   padding: 10px;  margin: 25px 15px 25px 0;
 }
