@@ -1,14 +1,21 @@
+.other-navbar-settings
+{
+    /*background:#000;*/
+    margin-bottom:0;
+    position:relative;
+    z-index: 1000000;            
+}
 
 .navbar-hover:hover{
     cursor:pointer;
     color:#fff;
     border-top: 3px solid #00aedb; 
 }
+
 nav ul li a:hover{
   border-top: 3px solid #00aedb; 
 
 }
-.chumn-sha{position: relative;z-index:1500; }
 .nav .open>a
 {
     background:none !important;
@@ -162,4 +169,3 @@ li.active{
     border: 2px solid #2c3e50;
     background: #2c3e50;
 }
-
