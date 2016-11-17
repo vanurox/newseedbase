@@ -14,10 +14,10 @@ $(window).on('scroll', function () {
   // console.log(first_section_height);
   if(cur_pos > first_section_height)
   {
-    $("#navigation-home .navbar-fixed-top").addClass("navbar-inverse");
+    $("#navigation-home #nav-container-mine").addClass("navbar-inverse");
   }else
   {
-    $("#navigation-home .navbar-fixed-top").removeClass("navbar-inverse");
+    $("#navigation-home #nav-container-mine").removeClass("navbar-inverse");
   }
  
 });
