@@ -132,8 +132,25 @@ li.active{
     list-style: none;
 }
 .footer_box{
-    min-height:250px;
+    /*min-height:250px;*/
+    margin:10px 0px;
+    background:#444;
+    color:#ccc;
+    padding:5px 0px;
 }
+
+
+.footer_mine_text
+{
+  font-size:2vmin;
+  padding:5px;
+  border-right:solid 1px #ccc;
+}
+.footer_mine_text:nth-child(4)
+{
+    border:none;
+}
+
 .section_footer >.back_contact_us .container-fluid{
     padding: 2% 0 !important;
 }
