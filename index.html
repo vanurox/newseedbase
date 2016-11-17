@@ -1,4 +1,4 @@
-
+<!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -39,6 +39,7 @@
       <script src="assets/js/jssor.slider-21.1.6.mini.js"></script>
 	    <script src="assets/js/myjQuery.js"></script>
       <script src="assets/js/wow.min.js"></script>
+      <script src="assets/js/mine.js"></script>
     <!-- Script Endz Here -->
 <script>
     wow = new WOW(
@@ -56,23 +57,50 @@
 
 </head>
 <body>
-	<header id="navigation"> 
-		<div class="navbar navbar-inverse navbar-fixed-top" role="banner"> 
+	<header id="navigation-home"> 
+		<div class="navbar navbar-fixed-top " role="navigation"> 
 			<div class="container-fluid"> 
 				<div class="navbar-header"> 
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
 						<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> 
 					</button> 
-					<a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo" width="200px"></a> 
+					<a  href="index.html"><img src="assets/img/logo.png" class="navbar-brand" alt="logo" width="200px"></a> 
 				</div> 
-				<div class="collapse navbar-collapse"> 
-					<ul class="nav navbar-nav navbar-right"> 
-						<li><a href="#navigation">HOME</a></li> 
-						<li><a href="#about-us">ABOUT US</a></li> 
-						<li><a href="#services">EARLY SIGN UP</a></li> 
-						<li><a href="#our-team">WORK WITH US</a></li> 
-						<li><a href="#portfolio">FEEDBACK</a></li> 
-						<li><a href="#clients">LOG IN</a></li> 
+				<div class="collapse navbar-collapse sticky-nav"  data-spy="affix" style="
+          position:relative;right:0; !important;"> 
+					<ul class="nav navbar-nav  navbar-right text-xs-center "  > 
+						<li class="navbar-hover"><a href="#navigation-home">Home</a></li> 
+						<li class="navbar-hover"><a href="#featured" > Feautres </a></li> 
+						<li class="navbar-hover"><a href="#testimonial" > Testimonial </a></li> 
+            <li class="navbar-hover"><a href="#about" >About</a></li> 
+						<li class="navbar-hover"><a href="#contactUs" >Contact Us</a></li> 
+            <li class="dropdown navbar-hover">
+              <a href="#" class="dropdown-toggle  " data-toggle="dropdown"> 
+                Carrier <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li> <a href="#"> Work With Us </a> </li>
+              </ul>
+            </li> 
+            <li class="dropdown navbar-hover">
+              <a href="#" class="dropdown-toggle  " data-toggle="dropdown">
+                Request <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li> <a href="#"> Feedback </a> </li>
+                <li> <a href="#"> Early Sign Up </a> </li>
+              </ul>
+            </li> 
+						<li class=" dropdown navbar-hover">
+              <a href="#blog"  class="dropdown-toggle  " data-toggle="dropdown">
+                Blog <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li> <a href="#"> Skill Building Resources </a> </li> 
+                <li> <a href="#"> Setup Resources </a> </li>
+              </ul>
+            </li> 
+            <li class="navbar-hover"> <a href=""> <button type="submit" class="btn btn-success"> Login </button> </a> </li>
 					</ul> 
 				</div> 
 			</div> 
@@ -230,7 +258,7 @@
 <!-- #/ section3 Endz Here -->
 
 <!-- Testimonial -->
-<section class="section section-testimonials">
+<section class="section section-testimonials" id="testimonial">
     <div class="container">
       <h2 class=" text-center topspace"><strong>  What people are saying about us?</strong></h2>
       <div id="testimonials-carousel" class="carousel slide" data-ride="carousel">
@@ -450,7 +478,7 @@
 </section>
 <!--#/ Section Job Board endz-->
 <!-- section featured freelancer -->
-<section class="section section_2 featured_freelancer">
+<section class="section section_2 featured_freelancer" id="featured">
   <div class="container">
 
       <h3 class=" color_orange text-center"><strong>Featured Freelancer</strong></h3>
@@ -499,7 +527,7 @@
 </section>
 <!--#/ section featured freelancer -->
   <!-- section About Starts -->
-  <section class="about section" class="container-fluid features">
+  <section class="about section container-fluid features" id="about">
     <div class="container-fluid">
       <div class="col-lg-12 text-center">
         <div class="navy-line"></div>
@@ -616,7 +644,7 @@
 <!-- Section footer Start -->
 <section class="section section_footer">
 <!-- contact Us -->
-  <div class="back_contact_us" style="background: url('assets/img/World_Map.jpg')  no-repeat 100% 100%; height: auto;background-size: cover;overflow: hidden;background-attachment: fixed; z-index: 1; ">
+  <div class="back_contact_us" id="contactUs" style="background: url('assets/img/World_Map.jpg')  no-repeat 100% 100%; height: auto;background-size: cover;overflow: hidden;background-attachment: fixed; z-index: 1; ">
     <div class="container text-center"> 
         <div class="container-fluid"> <br>
             <div class="green" style="width: 5%;margin:0 auto;height: 2px;"> </div> 
@@ -684,5 +712,14 @@
         </div> 
 </section>
 <!-- #/ Section Footer Endz -->
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('body').scrollspy({
+      target:'.navbar',
+      offset:10
+    });
+  });
+</script>
+
 </body>
 </html>

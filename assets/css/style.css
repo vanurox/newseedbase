@@ -2,8 +2,10 @@
 	word-wrap:break-word;
        font-family: "Helvetica Neue", Helvetica;
 }
+
 body
 {
+  position: relative;
 	background: #ededed; 
 }
 .wow:first-child {
@@ -25,7 +27,7 @@ a:link{cursor:pointer;text-decoration: none !important;}
 .job-board{width: 100% ;margin:1% auto !important;background: #fff; height:auto; background-size:100% 100%; background-attachment: fixed; z-index: 4;}
 .section-testimonials{width: 100% ;margin:1% auto !important;background: #fff;padding: 50px 0 ; }
 .still_have_qustion{width: 100% ;margin:1% auto !important;	background: #fff;}
-.home{width: 100% ;	background-size:100% 100%; background-attachment: fixed; z-index: 4;}
+.home{width: 100% ; 	background-size:100% 100%; background-attachment: fixed; z-index: 4;}
 .about{width: 100% ;margin:1% auto !important;background: #fff;padding: 50px 0 ;}
 .job_board{width: 100% ;margin:1% auto !important;background: #fff;padding: 20px 0 ;}
 .section_footer{width: 100% ;	background: #fff; background-size:100% 100%; background-attachment: fixed; z-index: 4;}
@@ -62,7 +64,7 @@ a:link{cursor:pointer;text-decoration: none !important;}
 
 .navbar-brand {  height: 80px;}
 
-.nav >li >a {  padding-top: 30px;  padding-bottom: 30px;  color: #fff !important;}
+.nav >li >a {  padding-top: 30px;  padding-bottom: 30px; overflow-y:visible !important; color: #fff !important;}
 .nav >li:hover
 {	background: rgba(16, 16, 16,.9);}
 .navbar-toggle {

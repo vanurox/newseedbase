@@ -1,4 +1,18 @@
-
+.navbar-hover:hover{
+    cursor:pointer;
+    background:#000 !important;
+    color:#fff;
+}
+nav ul li a:hover{
+  border-top: 3px solid #00aedb;
+  border-size:border-box;
+}
+.right-side{
+    position: relative;
+    right:0; !important;
+}
+li.active{border-top: 3px solid #00aedb; border-size:border-box;}
+section.active {}
 .footer {
     background: #EDEFF1;
     height: auto;
@@ -8,7 +22,6 @@
     border-bottom: 1px solid #CCCCCC;
     border-top: 1px solid #DDDDDD;
 }
-
 
 .footer h4 {
     border-bottom: 1px solid #BAC1C8;
