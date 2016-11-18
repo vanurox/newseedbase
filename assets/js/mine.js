@@ -29,7 +29,7 @@ $(window).on('scroll', function () {
     var id = $el.attr('href');
       // console.log(nav_height);
     $('html, body').animate({
-      scrollTop: $(id).offset().top - nav_height - 50
+      scrollTop: $(id).offset().top - nav_height
     }, 1000);
     
     return false;
