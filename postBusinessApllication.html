@@ -29,6 +29,8 @@
           .carousel-control.right, .carousel-control.left {
                  background-image: none;   color: #f4511e;
             }
+            .form-group{margin-bottom: 1%;}
+          
     </style>
     <!-- link Endz here-->
     <!-- Script Starts Here -->
@@ -44,52 +46,136 @@
       <div class="col-md-4 col-sm-4 col-xs-12 text-center pull-left"><a href="index.html"><img src="assets/img/logo.png" alt="" width="200px;"></a></div>
       <div class="col-sm-4 col-xs-12"></div>
       <div class="col-md-4 col-sm-4 col-xs-12 text-center text-capitalize color_white"><br>
-        <h5><strong><i>Already have an account?</i><a href="#" class="a_link color_green">Log In</a></strong></h5>
+        <h5><strong><i>Already have an account?</i><a href="loginv2.html" class="a_link color_green">Log In</a></strong></h5>
       </div>
     </div>
   </div>
   <div class="container text-capitalize">
     <div class="col-md-12 text-center color_green">
-      <h4 class="color_green"><strong><br>Please Login if You are Existing User</strong></h4>
+      <h3 class="color_green"><strong><br>Post Business Application</strong></h3>
     </div>
+     <div class="col-md-12 text-center" ><h5 style="line-height:1.4em;"><strong>Looking to make or create?<a class="color_green" href="clientsignupv2.html">Sign up as a Client</a></strong><br><strong>Looking to mentor?<a class="color_purple" href="residentLoginv2.html">Sign up as a Resident</a></strong></h5></div>
   </div>
   <div class="container">
     <div class="form_box">
       <div>
-        <h3 class="text-center color_green"><strong>Log In</strong></h3>
+        <h3 class="text-center color_green" ><strong>Sign up as a client</strong></h3>
       </div>
       <form id="form" role="form" action="/loginv2" method="post" class="m-t">
+
         <div class="form-group">
-          <input id="username" type="text" placeholder="Username" name="username" required class="form-control">
+          <label for="sel1" class=""></label>
+          <select class="form-control" id="sel1">
+            <option hidden>Category </option>
+            <option>Individual </option>
+            <option>Entrepreneur</option>
+            <option>Company</option>
+          </select>
+        </div>
+        <div class="form-group col-xs-6">
+          <input id="firstName" type="text" placeholder="First Name" name="firstName" required class="form-control">
+        </div>
+        <div class="form-group col-xs-6">
+          <input id="lastName" type="text" placeholder="Last Name" name="lastName" required class="form-control">
         </div>
         <div class="form-group">
           <input id="password" type="password" placeholder="Password" name="password" required class="form-control">
+        </div> 
+        <div class="form-group">
+          <input id="email" type="email" placeholder="Email" name="email" required class="form-control">
         </div>
-        <br>
-        <button type="submit" class="btn btn-success green col-md-12">Log In</button>
+        <div class="form-group">
+          
+          <select class="form-control" id="sel1">
+            <option hidden>Post up option</option>
+            <option>Pitch</option>
+            <option>Poster</option>
+          </select>
+        </div>
+        <div class="form-group">
+           <input type="file" class="form-control" id="uploadFile" placeholder="Choose File"
+                    required /> 
+        </div>
+        <div class="form-group">
+          <select class="form-control" id="sel1">
+            <option hidden>Amount paying </option>
+            <option>Pitch ($10) </option>
+            <option>Poster ($5)  </option>
+          </select>
+        </div>
+        <br> 
+        <div class="panel-heading">
+           <h3 style="color: #111199">
+               <strong> Payment Option</strong>
+           </h3>
+           <div class="col-xs-12">
+            <table>
+              <tr>
+                <td style="padding: 8px;"> 
+                    <a href=""><img src="assets/img/paymentOption/visa.png" alt="" class="img-responsive"></a>
+                </td>
+                <td  style="padding: 8px;">  
+                    <a href=""><img src="assets/img/paymentOption/master.png" alt="" class="img-responsive"></a>
+                </td>
+                <td  style="padding: 8px;"> 
+                    <a href=""><img src="assets/img/paymentOption/american.png" alt="" class="img-responsive"></a>
+                </td>
+                <td  style="padding: 8px;"> 
+                    <a href=""><img src="assets/img/paymentOption/paypal.png" alt="" class="img-responsive"></a>
+                </td>
+              </tr>
+            </table> <br>
+        </div>
+      </div> 
+        
+         
+        <div class="form-group"><br><br>
+
+
+          <input type="text" class="form-control" id="cardNumber" placeholder="Valid Card Number"
+                    required />    
+        </div>
+        <div class="form-group  col-xs-6">
+            <input type="text" class="form-control" id="expityMonth" placeholder="MM" required />
+        </div>
+        <div class="form-group col-xs-6">
+            <input type="text" class="form-control" id="expityYear" placeholder="YY" required />
+        </div>
+       
+        <div class="form-group col-xs-6">
+            <input type="password" class="form-control" id="cvCode" placeholder="CV CODE" required />
+        </div> 
+        <div class="form-group col-xs-6">
+            <input type="text" class="form-control" id="securityCode" placeholder="Security Code" required />
+        </div>
+         <div class="form-group col-xs-4"><br>
+            <input type="text" class="form-control" id="abc" required />
+        </div>
+         <div class="form-group col-xs-8"><br>
+         <h5>
+            <strong>Why I wish to post up on mySeedBase?</strong></h5>
+        </div>
+        <div class="clearfix"></div>
+        <div class="form-group"><h5> 
+          <input type="checkbox">I will like to receive email notification to help me get the most of mySeedBase                 Yes I understand that by posting up file, I’m making it publicly available on this platform
+                </h5>
+        </div>
+         <div class="form-group"><h5> 
+          <input type="checkbox">Yes, I understand and agree to the mySeedBase Terms of Service, including the User Agreement and Privacy Policy.></h5>
+        </div>
+        <div class="form-group">
+          <h5><strong>Please accept the mySeedBase Terms of Service before continuing.</strong></h5>
+        </div>
+        <div class="form-group col-xs-12">
+          
+             <br>
+            <button type="submit" class="btn btn-success green col-md-12"><a href="" style="color: #fff;"><strong>Post Up</strong></a></button>
+         
+        </div>
       </form>
-      
-        <div class="form-group text-center">
-          <small class="text-center">
-            <strong>Don't have an account</strong><br><br>
-          </small>
-        </div>
-        <div class="form-group">
-          <a href="/signup/client">
-            <button type="button" class="btn sign_as_client btn-default col-md-12">Sign Up as a Client</button>
-          </a><br><br>
-        </div>
-        <div class="form-group">
-          <a href="/signup/freelancer">
-              <button type="button" class="btn sign_as_freelancer btn-default col-md-12">Sign Up as a Freelancer</button>
-          </a><br><br>
-        </div>
-        <div class="form-group"><a href="/signup/mentor">
-              <button type="button" class="btn sign_as_resident btn-default col-md-12">Sign Up as a Resident</button></a><br><br>
-        </div>
+      <div class="clearfix"></div>
     </div>
   </div>
-</div>
 <!-- Section footer Start -->
 <section class="section section_footer" style="position: relative;top:24px;">
    
@@ -116,10 +202,61 @@
         </div>  
       </div>
     </div><!-- #/ Contact Us-->
-    
             <p> ©2016 mySeedBase™ All rights reserved </p>    
     </div>
 </section>
 <!-- #/ Section Footer Endz -->
   </body>
 </html>
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Payment Details
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <form role="form">
+                    <div class="form-group">
+                        <label for="cardNumber">
+                            CARD NUMBER</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="cardNumber" placeholder="Valid Card Number"
+                                required autofocus />
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-7 col-md-7">
+                            <div class="form-group">
+                                <label for="expityMonth">
+                                    EXPIRY DATE</label>
+                                <div class="col-xs-6 col-lg-6 pl-ziro">
+                                    <input type="text" class="form-control" id="expityMonth" placeholder="MM" required />
+                                </div>
+                                <div class="col-xs-6 col-lg-6 pl-ziro">
+                                    <input type="text" class="form-control" id="expityYear" placeholder="YY" required /></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-5 col-md-5 pull-right">
+                            <div class="form-group">
+                                <label for="cvCode">
+                                    CV CODE</label>
+                                <input type="password" class="form-control" id="cvCode" placeholder="CV" required />
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#"><span class="badge pull-right"><span class="glyphicon glyphicon-usd"></span>4200</span> Final Payment</a>
+                </li>
+            </ul>
+            <br/>
+            <a href="http://www.jquery2dotnet.com" class="btn btn-success btn-lg btn-block" role="button">Pay</a>
+        </div>
+    </div>
+</div> -->
