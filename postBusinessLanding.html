@@ -55,26 +55,55 @@
  
 </head>
 <body>
-	<header id="navigation"> 
-		<div class="navbar navbar-inverse navbar-fixed-top" role="banner"> 
-			<div class="container-fluid"> 
-				<div class="navbar-header"> 
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
-						<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> 
-					</button> 
-					<a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo" width="200px"></a> 
-				</div> 
-				<div class="collapse navbar-collapse"> 
-					<ul class="nav navbar-nav navbar-right"> 
-            <li><a href="#navigation">HOME</a></li> 
-						<li><a href="#navigation">OUR VALUE PROPSOTION</a></li> 
-						<li><a href="https://seedbase.typeform.com/to/Nb968k">FEEDBACK</a></li> 
-						<li><a href="#clients">LOG IN</a></li> 
-					</ul> 
-				</div> 
-			</div> 
-		</div><!--/navbar--> 
-	</header> <!--/#navigation--> 
+	<header id="navigation-home"> 
+    <div class="navbar navbar-fixed-top navbar-inverse" id="nav-container-mine" role="navigation"> 
+      <div class="container-fluid"> 
+        <div class="navbar-header"> 
+          <button type="button" id="bar_button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
+            <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+              <span class="icon-bar"></span> 
+              <span class="icon-bar"></span> 
+          </button> 
+          <a  href="index.html">
+          <img src="assets/img/logo.png" class="navbar-brand" alt="logo" width="200px"></a> 
+        </div> 
+        <div class="collapse navbar-collapse sticky-nav"  data-spy="affix" style="
+          position:relative;right:0; !important; background:none;"> 
+          <ul class="nav navbar-nav  navbar-right text-xs-center "  > 
+            <li class="navbar-hover active"><a href="#navigation-home">Home</a></li> 
+            <li class="dropdown navbar-hover">
+              <a href="#" class="dropdown-toggle  " data-toggle="dropdown"> 
+                Careers <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li> <a href="#"> Work With Us </a> </li>
+              </ul>
+            </li> 
+            <li class="dropdown navbar-hover">
+              <a href="#" class="dropdown-toggle  " data-toggle="dropdown">
+                Request <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li> <a href="#"> Feedback </a> </li>
+                <li> <a href="#"> Early Sign Up </a> </li>
+              </ul>
+            </li> 
+            <li class=" dropdown navbar-hover">
+              <a href="#blog"  class="dropdown-toggle  " data-toggle="dropdown">
+                Blog <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li> <a href="#"> Skill Building Resources </a> </li> 
+                <li> <a href="#"> Setup Resources </a> </li>
+              </ul>
+            </li> 
+            <li class="navbar-hover"> <a href="loginv2.html"> <button type="submit" class="btn btn-success"> Login </button> </a> </li>
+          </ul> 
+        </div> 
+      </div> 
+    </div><!--/navbar--> 
+  </header> <!--/#navigation--> 
 
 <!-- Section home strat  -->
 <section class="section section_2">

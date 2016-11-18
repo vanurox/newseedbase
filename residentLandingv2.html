@@ -60,27 +60,55 @@
  
 </head>
 <body>
-	<header id="navigation"> 
-		<div class="navbar navbar-inverse navbar-fixed-top" role="banner"> 
-			<div class="container-fluid"> 
-				<div class="navbar-header"> 
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
-						<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> 
-					</button> 
-					<a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo" width="200px"></a> 
-				</div> 
-				<div class="collapse navbar-collapse"> 
-					<ul class="nav navbar-nav navbar-right"> 
-            <li><a href="#navigation">HOME</a></li> 
-						<li><a href="#navigation">EARLY SIGN UP</a></li> 
-						<li><a href="#about-us">WORK WITH US</a></li>  
-						<li><a href="https://seedbase.typeform.com/to/Nb968k">FEEDBACK</a></li> 
-						<li><a href="#clients">LOG IN</a></li> 
-					</ul> 
-				</div> 
-			</div> 
-		</div><!--/navbar--> 
-	</header> <!--/#navigation--> 
+	 <header id="navigation-home"> 
+    <div class="navbar navbar-fixed-top navbar-inverse" id="nav-container-mine" role="navigation"> 
+      <div class="container-fluid"> 
+        <div class="navbar-header"> 
+          <button type="button" id="bar_button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
+            <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+              <span class="icon-bar"></span> 
+              <span class="icon-bar"></span> 
+          </button> 
+          <a  href="index.html">
+          <img src="assets/img/logo.png" class="navbar-brand" alt="logo" width="200px"></a> 
+        </div> 
+        <div class="collapse navbar-collapse sticky-nav"  data-spy="affix" style="
+          position:relative;right:0; !important; background:none;"> 
+          <ul class="nav navbar-nav  navbar-right text-xs-center "  > 
+            <li class="navbar-hover active"><a href="#navigation-home">Home</a></li> 
+            <li class="dropdown navbar-hover">
+              <a href="#" class="dropdown-toggle  " data-toggle="dropdown"> 
+                Careers <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li> <a href="#"> Work With Us </a> </li>
+              </ul>
+            </li> 
+            <li class="dropdown navbar-hover">
+              <a href="#" class="dropdown-toggle  " data-toggle="dropdown">
+                Request <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li> <a href="#"> Feedback </a> </li>
+                <li> <a href="#"> Early Sign Up </a> </li>
+              </ul>
+            </li> 
+            <li class=" dropdown navbar-hover">
+              <a href="#blog"  class="dropdown-toggle  " data-toggle="dropdown">
+                Blog <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li> <a href="#"> Skill Building Resources </a> </li> 
+                <li> <a href="#"> Setup Resources </a> </li>
+              </ul>
+            </li> 
+            <li class="navbar-hover"> <a href="loginv2.html"> <button type="submit" class="btn btn-success"> Login </button> </a> </li>
+          </ul> 
+        </div> 
+      </div> 
+    </div><!--/navbar--> 
+  </header> <!--/#navigation--> 
 
 <!-- Section home strat  -->
 <section class="section section_1">
@@ -106,20 +134,20 @@
   <div class="container-fluid">
     <div class="row text-center client_makehire_box">
       <div class="col-xs-3">
-        <div class="row"><a href="#makeHire"><i aria-hidden="true" class="fa fa-life-bouy fa-5x fa_small_in_media color_green"></i>
-            <h5 class="color_green bold">Join the Pool</h5></a></div>
+        <div class="row"><a href="#makeHire"><i aria-hidden="true" class="fa fa-life-bouy fa-5x fa_small_in_media color_purple"></i>
+            <h5 class="color_purple bold">Join the Pool</h5></a></div>
       </div>
       <div class="col-xs-3">
-        <div class="row"><a href="#negotiationCollaboration"><i aria-hidden="true" class="fa fa-child fa-5x fa_small_in_media color_green"></i>
-            <h5 class="color_green bold">The Mentor Click</h5></a></div>
+        <div class="row"><a href="#negotiationCollaboration"><i aria-hidden="true" class="fa fa-child fa-5x fa_small_in_media color_purple"></i>
+            <h5 class="color_purple bold">The Mentor Click</h5></a></div>
       </div>
       <div class="col-xs-3">
-        <div class="row"><a href="#makingPayment" data-target="#makingPayment"><i aria-hidden="true" class="fa fa-street-view fa-5x fa_small_in_media color_green"></i>
-            <h5 class="color_green bold">Obtain Residency</h5></a></div>
+        <div class="row"><a href="#makingPayment" data-target="#makingPayment"><i aria-hidden="true" class="fa fa-street-view fa-5x fa_small_in_media color_purple"></i>
+            <h5 class="color_purple bold">Obtain Residency</h5></a></div>
       </div>
       <div class="col-xs-3">
-        <div class="row"><a href="#protection"><i aria-hidden="true" class="fa fa-child fa-5x fa_small_in_media color_green"></i>
-            <h5 class="color_green bold">Gain Mentor</h5></a></div>
+        <div class="row"><a href="#protection"><i aria-hidden="true" class="fa fa-child fa-5x fa_small_in_media color_purple"></i>
+            <h5 class="color_purple bold">Gain Mentor</h5></a></div>
       </div>
     </div>
   </div>
@@ -129,7 +157,7 @@
               <div class="col-md-6 pull_left">
                 <div class="col-md-12">
                   <div class="row">
-                    <h2 class="color_green text-capitalize"><strong>What projects can I find? </strong></h2>
+                    <h2 class="color_purple text-capitalize"><strong>What projects can I find? </strong></h2>
                     <hr>
                   </div>
                 </div>
@@ -160,7 +188,7 @@
               <div class="col-md-6 pull_left">
                 <div class="col-md-12">
                   <div class="row">
-                    <h2 class="color_green text-capitalize"><strong>How do I choose among all the right projects to mentor?</strong></h2>
+                    <h2 class="color_purple text-capitalize"><strong>How do I choose among all the right projects to mentor?</strong></h2>
                     <hr>
                   </div>
                 </div>
@@ -175,7 +203,7 @@
               <div class="col-md-6">
                 <div class="col-md-12">
                   <div class="row">
-                    <h2 class="color_green text-capitalize"><strong>How do I grow a Mentorship Profile?</strong></h2>
+                    <h2 class="color_purple text-capitalize"><strong>How do I grow a Mentorship Profile?</strong></h2>
                     <hr>
                   </div>
                 </div>
@@ -196,7 +224,7 @@
               <div class="col-md-6">
                 <div class="col-md-12">
                   <div class="row">
-                    <h2 class="color_green text-capitalize"><strong>What Value do I get in return?</strong></h2>
+                    <h2 class="color_purple text-capitalize"><strong>What Value do I get in return?</strong></h2>
                     <hr>
                   </div>
                 </div>
@@ -361,12 +389,12 @@
   <div class="back_contact_us" style="background: url('assets/img/World_Map.jpg')  no-repeat 100% 100%; height: auto;background-size: cover;overflow: hidden;background-attachment: fixed; z-index: 1;">
     <div class="container text-center"> 
         <div class="container-fluid"> <br>
-            <div class="green" style="width: 5%;margin:0 auto;height: 2px;"> </div> 
+            <div class="purple" style="width: 5%;margin:0 auto;height: 2px;"> </div> 
             <h4>Contact Us</h4>
             <h6 style="color: #888;"><p>we would love to hear from you!</p></h6>
         </div>
         <div class="container-fluid"> 
-            <button class="btn btn-hero btn-lg green" role="button"><a href="">Send us an email</a></button>
+            <button class="btn btn-hero btn-lg purple" role="button"><a href="">Send us an email</a></button>
             <h6 style="color: #888;"><p>or follow us on our social platforms</p></h6>
              <div class="container text-center last">
                 <a href="#"><i class="fa fa-facebook"></i></a>
@@ -381,41 +409,15 @@
     <!-- Footer  -->
     <div class="footer" id="footer">
         <div class="container-fluid">
-            <div class="col-lg-3  col-md-3 col-sm-3 col-xs-6 footer_box">
-                <h4>Company Info </h4>
-                <ul>
-                    <li> <a href="#"> About us </a> </li>
-                    <li> <a href="#"> Blog </a> </li>
-                    <li> <a href="#"> Terms of Service </a> </li>
-                    <li> <a href="#"> Privacy Policy </a> </li>
-                </ul>
+            <div class="col-lg-12 text-center col-md-12 col-sm-12 col-xs-12 footer_box">
+                <div class="col-lg-9 col-lg-offset-2">
+                  <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 footer_mine_text">Terms of Use</div>
+                  <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 footer_mine_text">Privacy Policy</div>
+                  <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 footer_mine_text">Site Map</div>
+                  <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 footer_mine_text">Blog</div></div>
+                
             </div>
-            <div class="col-lg-3  col-md-3 col-sm-3 col-xs-6 footer_box">
-                <h4> Resource Inventory </h4>
-                <ul>
-                    <li> <a href="#"> Skills building modules </a> </li>
-                    <li> <a href="#"> Starting up resources </a> </li>
-                </ul>
-            </div>
-            <div class="col-lg-3  col-md-3 col-sm-3 col-xs-6 footer_box">
-                <h4> Browse By </h4>
-                <ul>
-                    <li> <a href="#"> Skills </a> </li>
-                    <li> <a href="#"> Location </a> </li>
-                    <li> <a href="#"> Project Area </a> </li>
-                    <li> <a href="#"> University </a> </li>
-                </ul>
-            </div>
-            <div class="col-lg-3  col-md-3 col-sm-3 col-xs-6 footer_box">
-                <h4> Prospective Partners </h4>
-                <ul>
-                    <li> <a href="http://engineering.uottawa.ca/makerspace" target="_blank">MakerSpace, UO</a> </li>
-                    <li> <a href="http://www.startupcan.ca/" target="_blank">Startup Canada</a> </li>
-                    <li> <a href="http://investottawa.ca/" target="_blank">InvestOttawa</a> </li>
-                    <li> <a href="https://concierge.innovation.gc.ca/lang?destination=%3Cfront%3E" target="_blank">Concierge Innovation</a> </li>
-                    <li>  <a href="https://www.magnet.today/" target="_blank">Magnet</a>  </li>
-                </ul>
-            </div>
+           
         </div>
 
         <!--/.container--> 
