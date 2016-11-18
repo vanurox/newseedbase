@@ -12,14 +12,14 @@ $(window).on('scroll', function () {
   var cur_pos = $(this).scrollTop();
   var first_section_height = $("#home").outerHeight();
   // console.log(first_section_height);
-  if(cur_pos >= (first_section_height- 150))
-  {
-    $("#navigation-home #nav-container-mine").addClass("navbar-inverse");
-    // $("#navigation-home .navbar-fixed-top ul.navbar-nav ")
-  }else
-  {
-    $("#navigation-home #nav-container-mine").removeClass("navbar-inverse");
-  }
+  // if(cur_pos >= (first_section_height- 150))
+  // {
+  //   $("#navigation-home #nav-container-mine").addClass("navbar-inverse");
+  //   // $("#navigation-home .navbar-fixed-top ul.navbar-nav ")
+  // }else
+  // {
+  //   $("#navigation-home #nav-container-mine").removeClass("navbar-inverse");
+  // }
  
 });
 

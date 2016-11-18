@@ -44,6 +44,21 @@ h2{font-size: 21px;}
 .section_2_container_top_margin{margin-top: 15% !important;}
 .form-group a button{width: 100%;}
 .form_box{width: 70% !important;}
+#nav-container-mine
+{
+	background-color: rgba(0, 0, 0, 0.8) !important;
+    border: medium none;
+    border-radius: 0;
+}
+/*#bar_button
+{
+	color:#000 !important;
+}
+#bar_button span.icon-bar
+{
+	color:#000 !important;
+}*/
+
 }
 
 
