@@ -63,22 +63,35 @@ a:link{cursor:pointer;text-decoration: none !important;}
 
 /*************nav bar css  *******/
 
-.navbar-brand {  height: 80px;}
+/*#navigation-middle .navbar-brand
+{
+  display:none;
+}
+*/
+#navigation-middle
+{
+  transition:all 0.25s ease-out 0s;
+}
 
-.nav >li >a {  
+
+#navigation-home .navbar-brand,#navigation-middle .navbar-brand  {
+  height: 80px;
+}
+
+#navigation-home .nav >li >a {  
   padding-top: 30px;
     padding-bottom: 30px; 
     overflow-y:visible !important;
      color: #fff !important;
     background: none !important;   }
-.nav >li > a:hover
+#navigation-home .nav >li > a:hover
 {
 	background: none !important;
 }
-.navbar-toggle {
+#navigation-home .navbar-toggle {
   padding: 10px;  margin: 25px 15px 25px 0;
 }
-.navbar-inverse{
+#navigation-home .navbar-inverse{
 	border :none;	border-radius: 0; background-color: rgba(16, 16, 16,.7);
 }
 

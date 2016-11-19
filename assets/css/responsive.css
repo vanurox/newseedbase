@@ -50,15 +50,14 @@ h2{font-size: 21px;}
     border: medium none;
     border-radius: 0;
 }
-/*#bar_button
+.mino
 {
-	color:#000 !important;
+	display:block !important;
 }
-#bar_button span.icon-bar
+#navigation-middle .navbar-brand
 {
-	color:#000 !important;
-}*/
-
+  display:block !important;
+}
 }
 
 
