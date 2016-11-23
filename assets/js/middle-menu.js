@@ -49,6 +49,7 @@ function onScroll(event){
     $('#navigation-middle div div ul li a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
+        // if (refElement.position().top <= scrollPos) {
         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
             $('#navigation-middle ul li').removeClass("active");
             $(this).parent("li").addClass("active");

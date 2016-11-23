@@ -36,8 +36,8 @@
 	    <script src="assets/js/jquery.js"></script>
 	    <script src="assets/js/bootstrap.min.js"></script>
       <script src="assets/js/thumbnail-slider.js" type="text/javascript"></script>
-      <script src="assets/js/myjQuery.js"></script>
       <script src="assets/js/wow.min.js"></script>
+       <script src="assets/js/middle-menu.js"></script>
     <!-- Script Endz Here -->
 <script>
     wow = new WOW(
@@ -133,7 +133,69 @@
 <section class="section section_2">
   <div class="container-fluid">
     <div class="row text-center client_makehire_box">
-      <div class="col-xs-3">
+              <div class="navbar navbar-inverse" id="navigation-middle">
+            <div class="container-fluid">
+              <!-- <a href="#" class="navbar-brand">SeedBase</a> -->
+              <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+               <a  href="index.html">
+                <img src="assets/img/logo.png" class="navbar-brand" alt="logo" width="200px">
+              </a> 
+              <div class="mino clearfix" style="display:none"></div>
+              <div class="collapse navbar-collapse navHeaderCollapse">
+                <ul class="nav navbar-nav navbar-right">
+                  <li>
+                        <a href="#joinThePool" data-toggle="collapse" data-target=".navHeaderCollapse" style="background:none">
+                    <div class="col-xs-12">
+                      <div class="col-xs-12">
+                          <i aria-hidden="true" class="fa fa-life-bouy fa-4x fa_small_in_media color_purple"></i>
+                          <h6 class="color_purple bold">Join the Pool</h6>
+                      </div>
+                    </div>
+                        </a>
+                        <div class="clearfix"></div>
+                  </li>
+                  <li>
+                  <a href="#theMentorClick" data-toggle="collapse" data-target=".navHeaderCollapse" style="background:none">
+                     <div class="col-xs-12">
+                      <div class="col-xs-12">
+                        
+                          <i aria-hidden="true" class="fa fa-child fa-4x fa_small_in_media color_purple"></i>
+                          <h6 class="color_purple bold">The Mentor Click</h6>
+                        
+                      </div>
+                    </div></a>
+                    <div class="clearfix"></div>
+                  </li>
+                  <li><a href="#obtainResidency"  style="background:none" data-toggle="collapse" data-target=".navHeaderCollapse">
+                     <div class="col-xs-12">
+                      <div class="col-xs-12">
+                        
+                          <i aria-hidden="true" class="fa fa-street-view fa-4x fa_small_in_media color_purple"></i>
+                          <h6 class="color_purple bold">Obtain Residency</h6>
+                      </div>
+                    </div>
+                        </a>
+                        <div class="clearfix"></div>
+                  </li>
+                  <li>
+                        <a href="#gainMentor" data-toggle="collapse" data-target=".navHeaderCollapse" style="background:none">
+                     <div class="col-xs-12">
+                      <div class="col-xs-12">
+                          <i aria-hidden="true" class="fa fa-child fa-4x fa_small_in_media color_purple"></i>
+                          <h6 class="color_purple bold">Gain Mentor</h6>
+                      </div>
+                    </div>
+                        </a>
+                        <div class="clearfix"></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+  <!--     <div class="col-xs-3">
         <div class="row"><a href="#makeHire"><i aria-hidden="true" class="fa fa-life-bouy fa-5x fa_small_in_media color_purple"></i>
             <h5 class="color_purple bold">Join the Pool</h5></a></div>
       </div>
@@ -148,11 +210,11 @@
       <div class="col-xs-3">
         <div class="row"><a href="#protection"><i aria-hidden="true" class="fa fa-child fa-5x fa_small_in_media color_purple"></i>
             <h5 class="color_purple bold">Gain Mentor</h5></a></div>
-      </div>
+      </div> -->
     </div>
   </div>
       <div class="container">
-         <div class="row" style="padding:8% 0;">
+         <div class="row" style="padding:8% 0;" id="joinThePool">
             <div class="col-md-12 margin-top">
               <div class="col-md-6 pull_left">
                 <div class="col-md-12">
@@ -182,7 +244,7 @@
               <div class="col-md-6 margin-top pull_right"><img src="assets/img/resident/1.png" alt="project" class="img-responsive img-rounded rounded"></div>
             </div>
           </div>
-          <div class="row margin-top" style="padding:8% 0;">
+          <div class="row margin-top" style="padding:8% 0;" id="theMentorClick">
             <div class="col-md-12 margin-top">
               <div class="col-md-6 margin-top pull_right"><img src="assets/img/resident/2.png" alt="mentoring" class="img-responsive img-rounded rounded"></div>
               <div class="col-md-6 pull_left">
@@ -198,7 +260,7 @@
               </div>
             </div>
           </div>
-          <div class="row margin-top" style="padding:8% 0;">
+          <div class="row margin-top" style="padding:8% 0;" id="obtainResidency">
             <div class="col-md-12 margin-top">
               <div class="col-md-6">
                 <div class="col-md-12">
@@ -218,7 +280,7 @@
               <div class="col-md-6"><img src="assets/img/resident/3.png" alt="mentorship" class="img-responsive img-rounded rounded"></div>
             </div>
           </div>
-          <div class="row margin-top" style="padding:8% 0;">
+          <div class="row margin-top" style="padding:8% 0;" id="gainMentor">
             <div class="col-md-12 margin-top">
               <div class="col-md-6"><img src="assets/img/resident/4.png" alt="value return" class="img-responsive img-rounded rounded"></div>
               <div class="col-md-6">
@@ -427,6 +489,7 @@
         </div> 
 </section>
 <!-- #/ Section Footer Endz -->
+      <script src="assets/js/myjQuery.js"></script>
 
 </body>
 </html>
